@@ -1,0 +1,171 @@
+
+        :root {
+            --ink: #182422;
+            --muted: #66716d;
+            --green: #1c7658;
+            --cream: #f6f5ef;
+        }
+
+        body {
+            color: var(--ink);
+            font-family: "DM Sans", sans-serif;
+        }
+
+        .navbar-brand {
+            color: var(--green);
+            font-family: "Playfair Display", serif;
+            font-size: 1.65rem;
+            font-weight: 700;
+        }
+
+        .nav-link {
+            font-weight: 600;
+        }
+
+        .hero {
+            position: relative;
+        }
+
+        .hero .carousel-item {
+            height: min(74vh, 650px);
+            min-height: 420px;
+            background: #17201e;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.67;
+        }
+
+        .hero .shade {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(9, 20, 17, 0.74), rgba(9, 20, 17, 0.08));
+        }
+
+        .hero-caption {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        .hero-copy {
+            max-width: 650px;
+            color: white;
+            pointer-events: auto;
+        }
+
+        .eyebrow,
+        .section-kicker {
+            color: #1c7658;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .hero .eyebrow {
+            color: #e2b976;
+        }
+
+        .hero h1 {
+            font: 700 clamp(2.6rem, 6vw, 5rem) / 1.04 "Playfair Display", serif;
+        }
+
+        .hero-copy p {
+            max-width: 510px;
+            color: rgba(255, 255, 255, 0.86);
+            font-size: 1.1rem;
+        }
+
+        .btn-event {
+            padding: 0.8rem 1.25rem;
+            border: 0;
+            background: var(--green);
+            color: white;
+            font-weight: 700;
+        }
+
+        .btn-event:hover {
+            background: #145b43;
+            color: white;
+        }
+
+        .section-title {
+            font: 700 clamp(2rem, 4vw, 3rem) "Playfair Display", serif;
+        }
+
+        .event-card {
+            height: 100%;
+            overflow: hidden;
+            border: 0;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(20, 35, 30, 0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-card img {
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .event-card .card-body {
+            padding: 1.35rem;
+        }
+
+        .event-card h3 {
+            font: 700 1.3rem "Playfair Display", serif;
+        }
+
+        .event-card p,
+        .feature p {
+            color: var(--muted);
+        }
+
+        .band {
+            background: var(--cream);
+        }
+
+        .feature {
+            padding-left: 1rem;
+            border-left: 3px solid #dfb66f;
+        }
+
+        .feature h3 {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .feature p {
+            margin: 0;
+            font-size: 0.93rem;
+        }
+
+        footer {
+            background: #15221e;
+            color: #e6ece8;
+        }
+
+        footer a {
+            color: #e6ece8;
+            text-decoration: none;
+        }
+
+        @media (max-width: 575px) {
+            .hero .carousel-item {
+                min-height: 480px;
+            }
+
+            .hero-copy {
+                padding-right: 1rem;
+            }
+        }
+    
